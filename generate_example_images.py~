@@ -54,7 +54,7 @@ def draw_single_sequential_images():
         random_order=True
     )
 
-    grid = seq.draw_grid(image, cols=3, rows=3)
+    grid = seq.draw_grid(image, cols=4, rows=4)
     misc.imsave("examples_grid.jpg", grid)
 
 def draw_per_augmenter_images():
