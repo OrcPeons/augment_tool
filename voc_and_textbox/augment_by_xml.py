@@ -15,15 +15,16 @@ import imgaug as ia
 import shutil
 
 from voc_and_textbox.tool_scripts.pascal_voc_io import *
+from tool_scripts.filter_empty_and_invalid_box import *
 
 ######################################################################
 # 用于增强检测的数据
 # 结果就存在原路径对应文件夹下，会自动将原样本拷贝进去。
 ######################################################################
 
-voc_dir = "/home/wz/Data/VIN/cut_num_eng/VOC2007"
-xml_dir = os.path.join(voc_dir, 'xml_pva_black')
-img_dir = os.path.join(voc_dir, 'img_pva_black')
+voc_dir = "/home/wz/Data/VIN/key_locate_data/License_Detected/VOC2007"
+xml_dir = os.path.join(voc_dir, 'xml')
+img_dir = os.path.join(voc_dir, 'img')
 
 res_xml_dir = os.path.join(voc_dir, 'Annotations')
 res_img_dir = os.path.join(voc_dir, 'JPEGImages')
@@ -33,13 +34,14 @@ seq = iaa.Sequential([
     iaa.Crop(px=(0, 8)),  # crop images from each side by 0 to 16px (randomly chosen)
     # iaa.Fliplr(0.5),  # horizontally flip 50% of the images
     # iaa.Flipud(0.5),
+    iaa.AdditiveGaussianNoise(scale = 8),
     iaa.Affine(rotate=(-7, 7), mode ='edge'),#mode ='edge'代表以边缘像素填充放射变换后的空洞背景
-    iaa.Affine(scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
-               # scale images to 80-120% of their size, individually per axis
-               translate_px={"x": (-10, 10), "y": (-10, 10)}, mode ='edge'),
+    # iaa.Affine(scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
+    #            # scale images to 80-120% of their size, individually per axis
+    #            translate_px={"x": (-10, 10), "y": (-10, 10)}, mode ='edge'),
     # iaa.Affine(scale=(0.8,1.0), mode ='edge'),
     # iaa.Affine(shear=(-30, 30)),
-    iaa.Multiply((0.8, 1.1)),  # change brightness of images (50-150% of original value)
+    iaa.Multiply((0.8, 1.2)),  # change brightness of images (50-150% of original value)
     # iaa.ContrastNormalization((0.8, 1.5))
 ])
 
@@ -93,3 +95,5 @@ if __name__ == '__main__':
         # copy original img and xml to new folder.
         shutil.copy(os.path.join(xml_dir, xml_name), os.path.join(res_xml_dir, xml_name))
         shutil.copy(os.path.join(img_dir, img_name), os.path.join(res_img_dir, img_name))
+
+    filter_invalid_xml(res_xml_dir,res_img_dir, '/tmp/xml_filter')

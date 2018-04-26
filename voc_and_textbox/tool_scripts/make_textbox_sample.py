@@ -133,11 +133,10 @@ class TextboxWriter:
         out_file.write(prettifyResult.decode('utf8'))
         out_file.close()
 
-
 def transform_json_to_xml():
     # data root dir includes json file and images.
-    data_root = '/home/wz/Data/VIN/viechleLicense/VOC2007/CROP/License'
-    save_dir = '/home/wz/Data/VIN/viechleLicense/VOC2007/CROP/xml'
+    data_root = '/home/wz/Data/VIN/textbox_train_data/all'
+    save_dir = '/home/wz/Data/VIN/textbox_train_data/all_xml'
 
     file_names = os.listdir(data_root)
     for file_name in file_names:
@@ -149,7 +148,7 @@ def transform_json_to_xml():
                 js_data = json.load(f)
 
                 xml_writer = TextboxWriter(None, None, None)
-                xml_writer.setFolderName('License')
+                xml_writer.setFolderName('Seal')
                 xml_writer.setSize(image.shape)
 
                 for key in js_data.keys():
@@ -173,8 +172,8 @@ def transform_json_to_xml():
                 xml_writer.save(os.path.join(save_dir, file_name[:-5] + '.xml'))
 
 def gen_train_testset():
-    xml_root_path = '/home/wz/Data/VIN/viechleLicense/VOC2007/CROP/augment_textbox/xml_aug'
-    img_root_path = '/home/wz/Data/VIN/viechleLicense/VOC2007/CROP/augment_textbox/img_aug'
+    xml_root_path = '/home/wz/Data/VIN/textbox_train_data/aug/xml_aug'
+    img_root_path = '/home/wz/Data/VIN/textbox_train_data/aug/img_aug'
     xmls = os.listdir(xml_root_path)
     random.shuffle(xmls)
     test_ratio = 0.1
@@ -191,4 +190,5 @@ def gen_train_testset():
 
 
 if __name__ == '__main__':
+    # transform_json_to_xml()
     gen_train_testset()
