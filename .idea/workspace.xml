@@ -2,38 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86ae1c78-1e05-4e2f-abb6-c5efb827384e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/voc_and_textbox/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/voc_and_textbox/augment_cls_sample.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/examples.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/examples_grid.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/generate_example_images.py" afterPath="$PROJECT_DIR$/generate_example_images.py" />
-      <change beforePath="$PROJECT_DIR$/imgaug/DejaVuSans.ttf" afterPath="$PROJECT_DIR$/imgaug/DejaVuSans.ttf" />
-      <change beforePath="$PROJECT_DIR$/imgaug/__init__.py" afterPath="$PROJECT_DIR$/imgaug/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/imgaug/augmenters.py" afterPath="$PROJECT_DIR$/imgaug/augmenters.py" />
-      <change beforePath="$PROJECT_DIR$/imgaug/imgaug.py" afterPath="$PROJECT_DIR$/imgaug/imgaug.py" />
-      <change beforePath="$PROJECT_DIR$/imgaug/parameters.py" afterPath="$PROJECT_DIR$/imgaug/parameters.py" />
-      <change beforePath="$PROJECT_DIR$/old_version/ImageAugmenter.py" afterPath="$PROJECT_DIR$/old_version/ImageAugmenter.py" />
-      <change beforePath="$PROJECT_DIR$/old_version/README.md" afterPath="$PROJECT_DIR$/old_version/README.md" />
-      <change beforePath="$PROJECT_DIR$/old_version/lena_augmented.jpg" afterPath="$PROJECT_DIR$/old_version/lena_augmented.jpg" />
-      <change beforePath="$PROJECT_DIR$/old_version/tests/CheckPerformance.py" afterPath="$PROJECT_DIR$/old_version/tests/CheckPerformance.py" />
-      <change beforePath="$PROJECT_DIR$/old_version/tests/CheckPlotImages.py" afterPath="$PROJECT_DIR$/old_version/tests/CheckPlotImages.py" />
-      <change beforePath="$PROJECT_DIR$/old_version/tests/TestImageAugmenter.py" afterPath="$PROJECT_DIR$/old_version/tests/TestImageAugmenter.py" />
-      <change beforePath="$PROJECT_DIR$/old_version/tests/chameleon.png" afterPath="$PROJECT_DIR$/old_version/tests/chameleon.png" />
-      <change beforePath="$PROJECT_DIR$/quokka.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" afterPath="$PROJECT_DIR$/setup.cfg" />
-      <change beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_directed_edge_detect.py" afterPath="$PROJECT_DIR$/tests/check_directed_edge_detect.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_performance.py" afterPath="$PROJECT_DIR$/tests/check_performance.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_seed.py" afterPath="$PROJECT_DIR$/tests/check_seed.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_superpixels.py" afterPath="$PROJECT_DIR$/tests/check_superpixels.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_visually.py" afterPath="$PROJECT_DIR$/tests/check_visually.py" />
-      <change beforePath="$PROJECT_DIR$/tests/check_withchannels.py" afterPath="$PROJECT_DIR$/tests/check_withchannels.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" afterPath="$PROJECT_DIR$/tests/test.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test_readme_examples.py" afterPath="$PROJECT_DIR$/tests/test_readme_examples.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_voc_4_seal.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/get_test_chinese_synthtext.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py" afterPath="$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/augment_cls_sample.py" afterPath="$PROJECT_DIR$/voc_and_textbox/augment_cls_sample.py" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py" afterPath="$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py" afterPath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py" afterPath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py" />
+      <change beforePath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_textbox_sample.py" afterPath="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_textbox_sample.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,25 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="filter_empty_and_invalid_box.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filter_empty_and_invalid_box.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="1368">
+              <caret line="80" column="53" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
               <folding>
                 <element signature="e#276#303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="augment_by_xml.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#45#92#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,21 +41,70 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="augment_for_textbox.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3888">
+              <caret line="217" column="25" lean-forward="false" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="augment_by_xml.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="augment_by_xml_banlanced.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml_banlanced.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen_voc_4_seal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_voc_4_seal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
-                <element signature="e#20#29#0" expanded="true" />
+                <element signature="e#20#53#0" expanded="true" />
+                <element signature="e#258#6018#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make_vin_sample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_vin_sample.py">
+      <file leaf-file-name="make_carID_samples.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1134">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen_reg_sample_4_seal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_reg_sample_4_seal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2988">
+              <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +112,18 @@
       <file leaf-file-name="gen_cls_sample_from_VOC.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_cls_sample_from_VOC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detectAndWriteXML.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/detectAndWriteXML.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1566">
+              <caret line="92" column="23" lean-forward="false" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -163,15 +187,20 @@
         <option value="$PROJECT_DIR$/jphu_test/jphu_aug.py" />
         <option value="$PROJECT_DIR$/jphu_test/augment_platenumber_xml.py" />
         <option value="$PROJECT_DIR$/jphu_test/augment_by_xml.py" />
-        <option value="$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/pascal_voc_io.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/detectAndWriteXML.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/__init__.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_specific_class_samples.py" />
-        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_vin_sample.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_cls_sample_from_VOC.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/augment_cls_sample.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/get_test_chinese_synthtext.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_regression_sample_4_seal.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_reg_sample_4_seal.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_voc_4_seal.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py" />
+        <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_textbox_sample.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py" />
         <option value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py" />
       </list>
@@ -199,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,22 +240,17 @@
               <item name="augment" type="462c0819:PsiDirectoryNode" />
               <item name="voc_and_textbox" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="augment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="augment" type="462c0819:PsiDirectoryNode" />
-              <item name="voc_and_textbox" type="462c0819:PsiDirectoryNode" />
-              <item name="tool_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/voc_and_textbox" />
+    <property name="last_opened_file_path" value="$USER_HOME$/testProjects/driving_license" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -246,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.augment_cls_sample">
+  <component name="RunManager" selected="Python.augment_by_xml">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,26 +295,8 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jphu_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="imgaug" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jphu_test/augment_by_xml.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="augment_by_xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/voc_and_textbox" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="augment" />
@@ -301,7 +306,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="augment_cls_sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="augment_for_textbox" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -313,7 +318,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="augment" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/augment_cls_sample.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,7 +342,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="gen_cls_sample_from_VOC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gen_reg_sample_4_seal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -349,7 +354,43 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="augment" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_cls_sample_from_VOC.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_reg_sample_4_seal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="gen_voc_4_seal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="augment" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_voc_4_seal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="make_textbox_sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="augment" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_textbox_sample.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,18 +502,21 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.filter_empty_and_invalid_box" />
-      <item index="1" class="java.lang.String" itemvalue="Python.augment_by_xml" />
-      <item index="2" class="java.lang.String" itemvalue="Python.gen_cls_sample_from_VOC" />
-      <item index="3" class="java.lang.String" itemvalue="Python.augment_cls_sample" />
+      <item index="1" class="java.lang.String" itemvalue="Python.make_textbox_sample" />
+      <item index="2" class="java.lang.String" itemvalue="Python.gen_reg_sample_4_seal" />
+      <item index="3" class="java.lang.String" itemvalue="Python.augment_for_textbox" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gen_voc_4_seal" />
+      <item index="5" class="java.lang.String" itemvalue="Python.augment_by_xml" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.augment_cls_sample" />
-        <item index="1" class="java.lang.String" itemvalue="Python.gen_cls_sample_from_VOC" />
-        <item index="2" class="java.lang.String" itemvalue="Python.augment_by_xml" />
-        <item index="3" class="java.lang.String" itemvalue="Python.augment_by_xml" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.augment_by_xml" />
+        <item index="1" class="java.lang.String" itemvalue="Python.make_textbox_sample" />
+        <item index="2" class="java.lang.String" itemvalue="Python.augment_for_textbox" />
+        <item index="3" class="java.lang.String" itemvalue="Python.gen_voc_4_seal" />
+        <item index="4" class="java.lang.String" itemvalue="Python.gen_reg_sample_4_seal" />
       </list>
     </recent_temporary>
   </component>
@@ -493,14 +537,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18490566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20916443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15848671" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21165644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -532,23 +577,11 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jphu_test/augment_by_xml_banlanced.py" />
-    <entry file="file://$PROJECT_DIR$/jphu_test/augment_platenumber_xml.py" />
-    <entry file="file://$PROJECT_DIR$/jphu_test/augment_platenumber_xml.py" />
-    <entry file="file://$PROJECT_DIR$/../bread_ubuntu14.04_gpu_train_distribute/recognition/distribute/lib_cpu/setup.py" />
-    <entry file="file://$PROJECT_DIR$/imgaug/imgaug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6900">
-          <caret line="355" column="24" lean-forward="false" selection-start-line="355" selection-start-column="8" selection-end-line="355" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bread_ubuntu14.04_gpu_train_distribute/recognition/distribute/lib_cpu/setup.py" />
     <entry file="file://$PROJECT_DIR$/imgaug/imgaug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6900">
@@ -613,24 +646,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jphu_test/augment_by_xml.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_example_images.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="142" column="34" lean-forward="false" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/348993582/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -646,24 +662,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/filterBBoxExceedImage.py" />
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/detectAndWriteXML.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/getImages.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml_banlanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3392">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -674,36 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/pascal_voc_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1070">
-          <caret line="253" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="253" selection-end-column="32" />
-          <folding>
-            <element signature="e#560#6320#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -711,33 +687,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="274" column="86" lean-forward="true" selection-start-line="274" selection-start-column="86" selection-end-line="274" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imgaug/augmenters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="580" column="57" lean-forward="false" selection-start-line="580" selection-start-column="57" selection-end-line="580" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="56160">
+          <caret line="3135" column="12" lean-forward="false" selection-start-line="3135" selection-start-column="12" selection-end-line="3135" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_cls_sample_from_VOC.py">
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/pascal_voc_io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_vin_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/test.txt" />
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/train.txt" />
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_textbox_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="161" column="42" lean-forward="false" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_example_images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2358">
+          <caret line="142" column="34" lean-forward="false" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/get_test_chinese_synthtext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_cls_sample_from_VOC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/detectAndWriteXML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="92" column="23" lean-forward="false" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,29 +755,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_for_textbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3888">
+          <caret line="217" column="25" lean-forward="false" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_reg_sample_4_seal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2988">
+          <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/gen_voc_4_seal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="e#20#29#0" expanded="true" />
+            <element signature="e#20#53#0" expanded="true" />
+            <element signature="e#258#6018#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/make_carID_samples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml_banlanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="80" column="53" lean-forward="false" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+          <folding>
+            <element signature="e#276#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/voc_and_textbox/augment_by_xml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voc_and_textbox/tool_scripts/filter_empty_and_invalid_box.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="58" column="33" lean-forward="true" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding>
-            <element signature="e#276#303#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="565">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

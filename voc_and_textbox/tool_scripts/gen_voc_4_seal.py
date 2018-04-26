@@ -1,30 +1,14 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-from __future__ import print_function, division
-import sys
-sys.path.append('../')
-
-import numpy as np
-from scipy import misc
-from imgaug import augmenters as iaa
-import imgaug as ia
-
-from scipy import ndimage, misc
-from skimage import data
-
+#-- coding:utf-8 --
 from xml.etree import ElementTree
 from xml.etree.ElementTree import Element, SubElement
 from lxml import etree
 import codecs
-
-import cv2 #just for debug
+import numpy as np
+import copy
 import os
 
-# copy xml to generate pascal voc xlm
-# copy.deepcopy
-import copy
-
 XML_EXT = '.xml'
+from pascal_voc_io import *
 
 class TextboxReader:
     def __init__(self, filepath):
@@ -193,66 +177,26 @@ class TextboxReader:
 
 
 if __name__ == '__main__':
-    voc_dir = "/home/wz/Data/VIN/textbox_train_data/aug"
-    xml_dir = os.path.join(voc_dir, 'all_xml')
-    img_dir = os.path.join(voc_dir, 'all')
+    voc_dir = "/home/wz/Data/VIN/drving_license_cut/Seal_Regression/"
+    xml_dir = os.path.join(voc_dir, 'xml_aug')
+    img_dir = os.path.join(voc_dir, 'img_aug')
+    res_dir = os.path.join(voc_dir, 'voc_xml')
     xmls = os.listdir(xml_dir)
+
     for xml_ in xmls:
-        img_name = xml_[0:-4]+'.jpg'
+        img_name = xml_[0:-4] + '.jpg'
         if not os.path.exists(os.path.join(img_dir, img_name)):
             continue
-        image = ndimage.imread(os.path.join(img_dir, img_name))
 
         reader = TextboxReader(os.path.join(xml_dir, xml_))
         polygons = reader.getPolygons()
-        keypoints = []
-        for polygon in polygons:
-            keypoints.extend([ia.Keypoint(point[0], point[1]) for point in polygon])
-        keypoints = [ia.KeypointsOnImage(keypoints, shape=image.shape)]
+        height = reader.image_height
+        width = reader.image_width
+        xml_writer = PascalVocWriter(foldername=img_dir, filename=img_name[:-4],
+                                     imgSize = (width,height,3))
 
-        # print(keypoints)
-        # # draw on image
-        # image_keypoints = keypoints[0].draw_on_image(image, size=5)
-        seq = iaa.Sequential([
-            # iaa.Crop(px=(0, 10)),  # crop images from each side by 0 to 16px (randomly chosen)
-            iaa.Fliplr(0.5),  # horizontally flip 50% of the images
-            iaa.Flipud(0.5),
-            iaa.Affine(rotate=(-5, 5), mode='edge'),#仿she增强没问题，是在画图的时候最小外接举行已经不再是4,5了，而是得重新计算
-            # iaa.Affine(scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
-                       # scale images to 80-120% of their size, individually per axis
-                      # translate_px={"x": (-8, 8), "y": (-8, 8)}),
-            iaa.Affine(scale=(0.6, 1.0), mode='edge'),
-            #     shear=(-30, 30)),
-            iaa.Multiply((0.7, 1.3)),  # change brightness of images (50-150% of original value)
-            iaa.ContrastNormalization((0.7, 1.3))
-        ])
-        for i in range(10):
-            seq_det = seq.to_deterministic()
-            image_aug = seq_det.augment_image(image)
-            keypoints_aug = seq_det.augment_keypoints(keypoints)[0]
-            # convert from keypoints to array, or else can't make it to list in below loop
-            new_points = keypoints_aug.get_coords_array()
-            new_polygons = []
-            bndBoxs = []
-            num = 0
-            for polygon in polygons:
-                new_polygon = [(new_points[num + ind][0], new_points[num + ind][1]) for ind in range(len(polygon))]
-                num = num + len(polygon)
-                new_polygons.append(new_polygon)
-            reader.editFilename(str(i))
-            reader.editPolygons(new_polygons)
+        xmin, ymin, xmax, ymax = polygons[0][4][0],polygons[0][4][1],polygons[0][5][0],polygons[0][5][1]
 
-            #Just for debug
-            # for poly in new_polygons:
-            #     poly = np.array(poly)
-            #     xmin = min(poly[:,0])
-            #     ymin = min(poly[:,1])
-            #     xmax = max(poly[:,0])
-            #     ymax = max(poly[:,1])
-            #     cv2.rectangle(image_aug, (xmin, ymin), (xmax, ymax), (0,255,0))
-            #     cv2.imshow('imgaug', image_aug)
-            #     cv2.waitKey(0)
-
-            reader.savePascalVocXML(voc_dir+'/xml_aug/' + xml_[0:-4] + '_'+str(i) + '.xml')
-            misc.imsave(voc_dir+'/img_aug/' + xml_[0:-4] + '_'+str(i) + '.jpg', image_aug)
-        print('Done!')
+        xml_writer.addBndBox(int(xmin),int(ymin),int(xmax),int(ymax),'Seal')
+        xml_writer.save(os.path.join(res_dir, xml_))
+        print('Write to file %s successfully!' % (xml_))

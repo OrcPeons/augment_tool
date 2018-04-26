@@ -12,16 +12,17 @@ import random
 # 用于增强分类网的数据，按照增强基数aug_base_num，将样本数量不足的类别增强到该数目
 # 结果就存在原路径对应文件夹下
 ######################################################################
-cls_sample_root_dir = '/home/wz/Data/VIN/cut_num_eng/VOC2007/CROP'
-aug_base_num = 600
+cls_sample_root_dir = '/home/wz/Data/LabelingAlfa/number_and_char/aug'
+aug_base_num = 2000
 
 seq = iaa.Sequential([
-    iaa.GaussianBlur(sigma=(1.5, 3.0)),
+    # iaa.GaussianBlur(sigma=(1.5, 3.0)),
+    iaa.AdditiveGaussianNoise(scale = 0.1*255),
     iaa.Crop(px=(0, 10)),
     iaa.Affine(rotate=(-7, 7), mode ='edge'),
-    iaa.Affine(scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
-               translate_px = {"x": (-10, 10), "y": (-10, 10)}, mode='edge'),
-    iaa.Affine(shear = 10, mode = 'edge'),
+    # iaa.Affine(scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
+    #            translate_px = {"x": (-10, 10), "y": (-10, 10)}, mode='edge'),
+    iaa.Affine(shear = 5, mode = 'edge'),
     iaa.Multiply((0.8, 1.2))
 ])
 
